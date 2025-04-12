@@ -1,0 +1,184 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    color: #333;
+    max-width: 1000px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+header {
+    background-color: #1a1a2e;
+    color: white;
+    padding: 30px 40px; /* Increased padding */
+    border-radius: 8px;
+    margin-bottom: 40px; /* Increased margin */
+    background: linear-gradient(135deg, #1a1a2e 0%, #2a0845 100%);
+    text-align: center; /* Center header text */
+}
+
+h1 {
+    margin: 0 0 10px 0; /* Added bottom margin */
+    font-size: 2.5rem; /* Slightly larger */
+}
+
+h2 {
+    color: #1a1a2e;
+    border-bottom: 3px solid #16213e; /* Thicker border */
+    padding-bottom: 10px;
+    margin-top: 40px; /* Increased margin */
+    margin-bottom: 25px; /* Added bottom margin */
+    font-size: 1.8rem; /* Slightly larger */
+}
+
+h3 {
+     margin-bottom: 10px;
+     font-size: 1.3rem;
+}
+
+section {
+    margin-bottom: 40px; /* Add space between sections */
+}
+
+.tagline {
+    font-style: italic;
+    color: #e0e0e0;
+    margin-top: 10px;
+    font-size: 1.1rem; /* Slightly larger */
+}
+
+.project-card, .pricing-tier, .testimonial-card /* Added testimonial-card */ {
+    background-color: white;
+    border-radius: 8px;
+    padding: 25px; /* Increased padding */
+    margin-bottom: 25px; /* Increased margin */
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1); /* Enhanced shadow */
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out; /* Hover effect */
+    position: relative; /* Needed for price-tag positioning */
+}
+
+.project-card:hover, .pricing-tier:hover, .testimonial-card:hover {
+    transform: translateY(-5px); /* Lift effect */
+    box-shadow: 0 6px 16px rgba(0,0,0,0.15); /* Increased shadow on hover */
+}
+
+
+.skills-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px; /* Slightly increased gap */
+    margin-top: 15px;
+}
+
+.skill-badge {
+    background-color: #e6f3ff;
+    color: #0066cc;
+    padding: 6px 14px; /* Slightly larger padding */
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: 500; /* Slightly bolder */
+    display: inline-block;
+}
+
+.service-card {
+    background-color: #f0f7ff;
+    border-left: 5px solid #0066cc; /* Thicker border */
+    padding: 20px; /* Increased padding */
+    margin-bottom: 20px; /* Increased margin */
+    border-radius: 4px;
+}
+
+.service-card h3 {
+    margin-top: 0;
+    color: #0066cc;
+}
+
+.service-card.featured { /* Keep featured distinct */
+    border-left-color: #9900cc;
+    background-color: #f7f0ff;
+}
+
+.service-card.featured h3 {
+    color: #9900cc;
+}
+
+.price-tag {
+    position: absolute;
+    top: 20px; /* Adjusted position */
+    right: 20px; /* Adjusted position */
+    background: #e6f3ff;
+    padding: 6px 14px;
+    border-radius: 20px;
+    font-weight: bold;
+    color: #0066cc;
+    font-size: 0.9rem; /* Added font size */
+}
+
+.highlight-text {
+    font-weight: bold;
+    color: #0066cc;
+}
+
+.cta-button {
+    display: inline-block;
+    background-color: #1a1a2e;
+    color: white;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 20px;
+    transition: background-color 0.2s ease;
+    text-align: center;
+}
+
+.cta-button:hover {
+    background-color: #2a0845; /* Darker purple on hover */
+}
+
+/* Basic Mobile Responsiveness */
+@media (max-width: 768px) {
+    body {
+        padding: 15px;
+    }
+    header {
+        padding: 20px;
+    }
+    h1 {
+        font-size: 1.8rem;
+    }
+    h2 {
+        font-size: 1.5rem;
+    }
+    .skills-container {
+        gap: 8px;
+    }
+    .skill-badge {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+    }
+    .project-card, .pricing-tier, .testimonial-card {
+        padding: 20px;
+    }
+     .price-tag {
+        padding: 5px 10px;
+        font-size: 0.8rem;
+        top: 15px;
+        right: 15px;
+    }
+    .cta-button {
+         padding: 10px 20px;
+         width: 100%; /* Make button full width on small screens */
+         box-sizing: border-box; /* Include padding in width */
+    }
+}
+
+footer /* Simple Footer Style */ {
+    text-align: center;
+    margin-top: 40px;
+    padding-top: 20px;
+    border-top: 1px solid #ddd;
+    color: #777;
+    font-size: 0.9rem;
+} 
